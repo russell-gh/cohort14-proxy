@@ -5,7 +5,7 @@ const validate = (req, res, next) => {
 
   //check we have an url
   if (!query.url) {
-    res.send("No URL set");
+    res.send("You need to send a param called url to use this proxy!");
     return;
   }
 
