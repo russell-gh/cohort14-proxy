@@ -11,7 +11,7 @@ const validate = (req, res, next) => {
 
   //check the url is valid
   if (!urlValid(query.url)) {
-    res.send("Invalid URL");
+    res.send("Invalid URL!!!!");
     return;
   }
 

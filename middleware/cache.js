@@ -4,7 +4,7 @@ const cache = (req, res, next) => {
   //before asking the api, check the local cache
   if (req.cacheObj[method][query.url]) {
     res.send(req.cacheObj[method][query.url]);
-    console.log("Sending STALE data");
+    console.log("Sending STALE data!");
     return;
   }
 
